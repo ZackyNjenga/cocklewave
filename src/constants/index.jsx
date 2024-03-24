@@ -10,18 +10,18 @@ import {
     discordBlack,
     facebook,
     figma,
-    framer,
     file02,
+    framer,
     homeSmile,
     instagram,
-    notifications2,
-    notifications3,
-    notifications4,
+    notification2,
+    notification3,
+    notification4,
     notion,
     photoshop,
     plusSquare,
     protopie,
-    raindrod,
+    raindrop,
     recording01,
     recording03,
     roadmap1,
@@ -33,11 +33,10 @@ import {
     sliders04,
     telegram,
     twitter,
-    yourlogo, notification4, notification3, notification2, raindrop
+    yourlogo,
 } from "../assets";
 
-
-export  const navigation = [
+export const navigation = [
     {
         id: "0",
         title: "Features",
@@ -49,24 +48,26 @@ export  const navigation = [
         url: "#pricing",
     },
     {
+        id: "2",
+        title: "How to use",
+        url: "#how-to-use",
+    },
+    {
         id: "3",
         title: "Roadmap",
         url: "#roadmap",
     },
     {
         id: "4",
-        title: "New Account",
-        url: "#New Account",
+        title: "New account",
+        url: "#signup",
+        onlyMobile: true,
     },
     {
         id: "5",
-        title: "Sign In",
-        url: "#Sign In",
-    },
-    {
-        id: "3",
-        title: "How To Use",
-        url: "#how-to-use",
+        title: "Sign in",
+        url: "#login",
+        onlyMobile: true,
     },
 ];
 
@@ -74,43 +75,45 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-const companyLogos = [yourlogo, yourlogo, yourlogo,yourlogo, yourlogo];
+export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
-export const brainwaeServices = [
-    "photo generating",
-    "photo enhancing",
+export const brainwaveServices = [
+    "Photo generating",
+    "Photo enhance",
     "Seamless Integration",
-    ];
+];
 
-export const brainwaveServicesIcons =[
-    recording01,
+export const brainwaveServicesIcons = [
     recording03,
+    recording01,
     disc02,
     chromecast,
     sliders04,
 ];
+
 export const roadmap = [
     {
         id: "0",
-        title: "voice recognition",
-        text: "enable the chatbot to understand and respond to voice commands, making it easier for the user to interact with the app hands-free",
-        date: "May 2024",
+        title: "Voice recognition",
+        text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+        date: "May 2023",
         status: "done",
         imageUrl: roadmap1,
         colorful: true,
     },
     {
         id: "1",
-        title: "Gamefication",
-        text: "Add game-like elements such as badges or leaderboards, to incentivize the user to engage more with the  chatbot",
+        title: "Gamification",
+        text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
         date: "May 2023",
+
         status: "progress",
         imageUrl: roadmap2,
     },
     {
         id: "2",
-        title: "Chatbot Customization",
-        text: "Allow users to customize the  chatbot's appearance and behaviour, making it more engaging and fun to interacting with",
+        title: "Chatbot customization",
+        text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
         date: "May 2023",
         status: "done",
         imageUrl: roadmap3,
@@ -118,16 +121,17 @@ export const roadmap = [
     {
         id: "3",
         title: "Integration with APIs",
-        text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendation",
+        text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
         date: "May 2023",
         status: "progress",
         imageUrl: roadmap4,
     },
 ];
 
-export const collabText =  " With smart automation ad top-notch security, it's the perfect solution for teams looking to work smarter.";
+export const collabText =
+    "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
 
-export const collabContext = [
+export const collabContent = [
     {
         id: "0",
         title: "Seamless Integration",
@@ -155,8 +159,8 @@ export const collabApps = [
         id: "1",
         title: "Notion",
         icon: notion,
-        width: 36,
-        height: 28,
+        width: 34,
+        height: 36,
     },
     {
         id: "2",
@@ -177,7 +181,7 @@ export const collabApps = [
         title: "Photoshop",
         icon: photoshop,
         width: 34,
-        height: 35,
+        height: 34,
     },
     {
         id: "5",
@@ -200,19 +204,19 @@ export const collabApps = [
         width: 38,
         height: 32,
     },
-    ];
+];
 
-export const pricing  = [
+export const pricing = [
     {
         id: "0",
         title: "Basic",
-        description: "AI chatbot, personaized recommendations",
+        description: "AI chatbot, personalized recommendations",
         price: "0",
         features: [
             "An AI chatbot that can understand your queries",
             "Personalized recommendations based on your preferences",
-            "Ability to explore the app and its featues without anyy cost",
-            ],
+            "Ability to explore the app and its features without any cost",
+        ],
     },
     {
         id: "1",
@@ -221,28 +225,28 @@ export const pricing  = [
         price: "9.99",
         features: [
             "An advanced AI chatbot that can understand complex queries",
-            "analytics dashboard to track your conversation",
-            "priority support to solve issues quickly",
-            ],
+            "An analytics dashboard to track your conversations",
+            "Priority support to solve issues quickly",
+        ],
     },
     {
         id: "2",
         title: "Enterprise",
-        description: "Custom AI chatbot advanced analytics, deddicated account",
+        description: "Custom AI chatbot, advanced analytics, dedicated account",
         price: null,
         features: [
             "An AI chatbot that can understand your queries",
-            "personalized recommendations based on yiur preferences",
+            "Personalized recommendations based on your preferences",
             "Ability to explore the app and its features without any cost",
-            ],
+        ],
     },
 ];
 
-export const benefiyts = [
+export const benefits = [
     {
         id: "0",
         title: "Ask anything",
-        text: "Let's users quickly find answers to their questions without having to search through multiple sources",
+        text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
         backgroundUrl: "./src/assets/benefits/card-1.svg",
         iconUrl: benefitIcon1,
         imageUrl: benefitImage2,
@@ -250,7 +254,7 @@ export const benefiyts = [
     {
         id: "1",
         title: "Improve everyday",
-        text: "The app uses natural language processing to understan user queries and provide accurate and relevant responses.",
+        text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
         backgroundUrl: "./src/assets/benefits/card-2.svg",
         iconUrl: benefitIcon2,
         imageUrl: benefitImage2,
@@ -258,38 +262,38 @@ export const benefiyts = [
     },
     {
         id: "2",
-        title: "connect everywhere",
-        text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible  and convenient",
-
+        title: "Connect everywhere",
+        text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
         backgroundUrl: "./src/assets/benefits/card-3.svg",
         iconUrl: benefitIcon3,
         imageUrl: benefitImage2,
     },
     {
         id: "3",
-        title: "Fast responses",
-        text: "Lets users quickly find answer to their questions without having to search through multiple sources",
+        title: "Fast responding",
+        text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
         backgroundUrl: "./src/assets/benefits/card-4.svg",
         iconUrl: benefitIcon4,
         imageUrl: benefitImage2,
+        light: true,
     },
     {
         id: "4",
-        title: "Fast responses",
-        text: "Lets users quickly find answer to their questions without having to search through multiple sources",
-        backgroundUrl: "./src/assets/benefits/card-4.svg",
-        iconUrl: benefitIcon4,
+        title: "Ask anything",
+        text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+        backgroundUrl: "./src/assets/benefits/card-5.svg",
+        iconUrl: benefitIcon1,
         imageUrl: benefitImage2,
     },
     {
-        id: "3",
-        title: "Fast responses",
-        text: "Lets users quickly find answer to their questions without having to search through multiple sources",
-        backgroundUrl: "./src/assets/benefits/card-4.svg",
-        iconUrl: benefitIcon4,
+        id: "5",
+        title: "Improve everyday",
+        text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+        backgroundUrl: "./src/assets/benefits/card-6.svg",
+        iconUrl: benefitIcon2,
         imageUrl: benefitImage2,
     },
-    ];
+];
 
 export const socials = [
     {
