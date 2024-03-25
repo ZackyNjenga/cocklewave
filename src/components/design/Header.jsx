@@ -43,6 +43,8 @@ export const HamburgerMenu = () => {
 
             <Rings />
 
+            {/*Absolute positioning*/}
+
             <SideLines />
 
             <BackgroundCircles />
