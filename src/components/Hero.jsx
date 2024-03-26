@@ -4,7 +4,7 @@ import Button from "./Button.jsx";
 import {useRef} from "react";
 import {ScrollParallax} from "react-just-parallax";
 import {heroIcons} from "../constants/index.jsx";
-import {Gradient} from "./design/Hero.jsx";
+import {BackgroundCircles, Gradient} from "./design/Hero.jsx";
 
 
 const Hero = () => {
@@ -89,6 +89,7 @@ const Hero = () => {
                              alt="hero"
                         />
                     </div>
+                    <BackgroundCircles/>
                 </div>
             </div>
         </Section>
