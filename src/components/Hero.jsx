@@ -7,6 +7,7 @@ import {heroIcons} from "../constants/index.jsx";
 import {BackgroundCircles, BottomLine, Gradient} from "./design/Hero.jsx";
 import Generating from "./Generating.jsx";
 import Notification from "./Notification.jsx";
+import CompanyLogos from "./CompanyLogos.jsx";
 
 
 const Hero = () => {
@@ -82,7 +83,9 @@ const Hero = () => {
                                 <ScrollParallax isAbsolutelyPositioned>
                                     <Notification
                                         className="hidden absolute -right-[5.5rem]
-                                         bottom-11rem] w-[18rem] xl:flex"
+                                     bottom-[15rem] px-1 py-1 bg-n-9/40 backdrop-blur
+                                      border border-n-1 rounded-2xl
+                                      xl:flex"
                                         title="Code generation"
                                     />
                                 </ScrollParallax>
@@ -103,6 +106,7 @@ const Hero = () => {
                     </div>
                     <BackgroundCircles/>
                 </div>
+                <CompanyLogos className="hidden relative z-10 mt-20 lg:block"/>
             </div>
             <BottomLine/>
         </Section>
