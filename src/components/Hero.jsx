@@ -4,7 +4,8 @@ import Button from "./Button.jsx";
 import {useRef} from "react";
 import {ScrollParallax} from "react-just-parallax";
 import {heroIcons} from "../constants/index.jsx";
-import {BackgroundCircles, Gradient} from "./design/Hero.jsx";
+import {BackgroundCircles, BottomLine, Gradient} from "./design/Hero.jsx";
+import Generating from "./Generating.jsx";
 
 
 const Hero = () => {
@@ -23,8 +24,8 @@ const Hero = () => {
                 max-w-[62rem] mx-auto text-center
                  mb-[4rem] lg:mb[6rem] md:mb-20">
                     <h1 className="h1 mb-6 ">
-                        Explore the possibilities of AI chatting
-                        with
+                        Explore the possibilities of &nbsp; AI &nbsp; chatting
+                        with {' '}
                         <span className="inline-block relative">
                                cocklewave
                             <img
@@ -60,6 +61,7 @@ const Hero = () => {
                                     height={490}
                                     alt="AI"
                                 />
+                                <Generating />
                                 <ScrollParallax isAbsolutelyPositioned>
                                     <ul className="hidden absolute -left-[5.5rem]
                                      bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur
@@ -92,6 +94,7 @@ const Hero = () => {
                     <BackgroundCircles/>
                 </div>
             </div>
+            <BottomLine/>
         </Section>
     );
 };
