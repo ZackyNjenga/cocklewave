@@ -8,6 +8,8 @@ import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
+import logo from "./logo.svg";
+import logole from "./logole.svg";
 
 import yourlogo from "./yourlogo.svg";
 import homeSmile from "./home-smile.svg";
@@ -79,6 +81,8 @@ import twitter from "./socials/twitter.svg";
 
 
 export {
+  logole,
+  logo,
   brainwave,
   check,
   check2,
