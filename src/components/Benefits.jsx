@@ -3,6 +3,7 @@ import Heading from "./design/Heading.jsx";
 import {benefits} from "../constants/index.jsx";
 import Arrow from "../assets/svg/Arrow.jsx";
 import {GradientLighht} from "./design/Benefits.jsx";
+import ClipPath from "../assets/svg/ClipPath.jsx";
 
 const Benefits = () => {
     return (
@@ -23,7 +24,7 @@ const Benefits = () => {
                         }
                             key={item.id}>
                             <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem]">
-                                <h5 className="h2 mb2-5">{item.title}</h5>
+                                <h5 className="h5 mb2-5">{item.title}</h5>
                                 <p className="body-2 mb-5 text-n-3">{item.text}</p>
                                 <div className="flex items-center mt-auto">
                                     <img
@@ -41,7 +42,7 @@ const Benefits = () => {
                             <div className="absolute inset-0.5 bg-n-8"
                                  style={{clipPath: "url(#benefits)"}}
                             >
-                                <div className="">
+                                <div className="absolute inset-5 opacity-15 transition-opacity  hover:opacity-20">
                                     {item.imageUrl  && (
                                         <img
                                             src={item.imageUrl}
@@ -53,6 +54,7 @@ const Benefits = () => {
                                         )}
                                 </div>
                             </div>
+                            <ClipPath/>
                         </div>
                     ))}
                 </div>
